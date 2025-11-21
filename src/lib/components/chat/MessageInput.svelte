@@ -1379,7 +1379,7 @@
 
 							<div class=" flex justify-between mt-0.5 mb-2.5 mx-0.5 max-w-full" dir="ltr">
 								<div class="ml-1 self-end flex items-center flex-1 max-w-[80%]">
-									<InputMenu
+									<!-- <InputMenu
 										bind:files
 										selectedModels={atSelectedModel ? [atSelectedModel.id] : selectedModels}
 										{fileUploadCapableModels}
@@ -1479,7 +1479,7 @@
 												<Component className="size-4.5" strokeWidth="1.5" />
 											</div>
 										</IntegrationsMenu>
-									{/if}
+									{/if} -->
 
 									{#if selectedModelIds.length === 1 && $models.find((m) => m.id === selectedModelIds[0])?.has_user_valves}
 										<div class="ml-1 flex gap-1.5">
@@ -1625,8 +1625,7 @@
 								</div>
 
 								<div class="self-end flex space-x-1 mr-1 shrink-0">
-									{#if (!history?.currentId || history.messages[history.currentId]?.done == true) && ($_user?.role === 'admin' || ($_user?.permissions?.chat?.stt ?? true))}
-										<!-- {$i18n.t('Record voice')} -->
+									<!-- {#if (!history?.currentId || history.messages[history.currentId]?.done == true) && ($_user?.role === 'admin' || ($_user?.permissions?.chat?.stt ?? true))}
 										<Tooltip content={$i18n.t('Dictate')}>
 											<button
 												id="voice-input-button"
@@ -1673,7 +1672,7 @@
 												</svg>
 											</button>
 										</Tooltip>
-									{/if}
+									{/if} -->
 
 									{#if (taskIds && taskIds.length > 0) || (history.currentId && history.messages[history.currentId]?.done != true) || generating}
 										<div class=" flex items-center">
@@ -1699,9 +1698,8 @@
 												</button>
 											</Tooltip>
 										</div>
-									{:else if prompt === '' && files.length === 0 && ($_user?.role === 'admin' || ($_user?.permissions?.chat?.call ?? true))}
+									<!-- {:else if prompt === '' && files.length === 0 && ($_user?.role === 'admin' || ($_user?.permissions?.chat?.call ?? true))}
 										<div class=" flex items-center">
-											<!-- {$i18n.t('Call')} -->
 											<Tooltip content={$i18n.t('Voice mode')}>
 												<button
 													class=" bg-black text-white hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-100 transition rounded-full p-1.5 self-center"
@@ -1761,7 +1759,7 @@
 													<Voice className="size-5" strokeWidth="2.5" />
 												</button>
 											</Tooltip>
-										</div>
+										</div> -->
 									{:else}
 										<div class=" flex items-center">
 											<Tooltip content={$i18n.t('Send message')}>
