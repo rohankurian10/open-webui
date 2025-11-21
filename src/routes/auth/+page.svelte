@@ -232,9 +232,7 @@
 									class="size-24 rounded-full"
 									alt=""
 								/>
-								<div class="mt-3 text-2xl font-bold">
-									ForgeAI
-								</div>
+								<div class="mt-3 text-2xl font-bold">ForgeAI</div>
 								<div class="mt-2 text-sm text-gray-600 dark:text-gray-400 font-medium">
 									Intelligent Knowledge Assistant for the Manufacturing Industry
 								</div>
