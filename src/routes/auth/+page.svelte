@@ -232,8 +232,11 @@
 									class="size-24 rounded-full"
 									alt=""
 								/>
-								<div class="mt-3 text-sm text-gray-600 dark:text-gray-400 font-medium">
-									ForgeAI – Intelligent Knowledge Assistant for the Manufacturing Industry
+								<div class="mt-3 text-2xl font-bold">
+									ForgeAI
+								</div>
+								<div class="mt-2 text-sm text-gray-600 dark:text-gray-400 font-medium">
+									Intelligent Knowledge Assistant for the Manufacturing Industry
 								</div>
 							</div>
 							<form
@@ -246,13 +249,13 @@
 								<div class="mb-1">
 									<div class=" text-2xl font-medium">
 										{#if $config?.onboarding ?? false}
-											{$i18n.t(`Get started with {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
+											{$i18n.t(`Get started`)}
 										{:else if mode === 'ldap'}
-											{$i18n.t(`Sign in to {{WEBUI_NAME}} with LDAP`, { WEBUI_NAME: $WEBUI_NAME })}
+											{$i18n.t(`Sign in with LDAP`)}
 										{:else if mode === 'signin'}
-											{$i18n.t(`Sign in to {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
+											{$i18n.t(`Sign in`)}
 										{:else}
-											{$i18n.t(`Sign up to {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
+											{$i18n.t(`Sign up`)}
 										{/if}
 									</div>
 
