@@ -224,17 +224,18 @@
 				{:else}
 					<div class="my-auto flex flex-col justify-center items-center">
 						<div class=" sm:max-w-md my-auto pb-10 w-full dark:text-gray-100">
-							{#if $config?.metadata?.auth_logo_position === 'center'}
-								<div class="flex justify-center mb-6">
-									<img
-										id="logo"
-										crossorigin="anonymous"
-										src="{WEBUI_BASE_URL}/static/favicon.png"
-										class="size-24 rounded-full"
-										alt=""
-									/>
+							<div class="flex flex-col items-center justify-center mb-6">
+								<img
+									id="logo"
+									crossorigin="anonymous"
+									src="{WEBUI_BASE_URL}/static/favicon.png"
+									class="size-24 rounded-full"
+									alt=""
+								/>
+								<div class="mt-3 text-sm text-gray-600 dark:text-gray-400 font-medium">
+									ForgeAI – Intelligent Knowledge Assistant for the Manufacturing Industry
 								</div>
-							{/if}
+							</div>
 							<form
 								class=" flex flex-col justify-center"
 								on:submit={(e) => {
@@ -568,20 +569,6 @@
 			</div>
 		</div>
 
-		{#if !$config?.metadata?.auth_logo_position}
-			<div class="fixed m-10 z-50">
-				<div class="flex space-x-2">
-					<div class=" self-center">
-						<img
-							id="logo"
-							crossorigin="anonymous"
-							src="{WEBUI_BASE_URL}/static/favicon.png"
-							class=" w-14 rounded-full"
-							alt=""
-						/>
-					</div>
-				</div>
-			</div>
-		{/if}
+
 	{/if}
 </div>
