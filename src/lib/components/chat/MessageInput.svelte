@@ -1698,7 +1698,7 @@
 												</button>
 											</Tooltip>
 										</div>
-									<!-- {:else if prompt === '' && files.length === 0 && ($_user?.role === 'admin' || ($_user?.permissions?.chat?.call ?? true))}
+										<!-- {:else if prompt === '' && files.length === 0 && ($_user?.role === 'admin' || ($_user?.permissions?.chat?.call ?? true))}
 										<div class=" flex items-center">
 											<Tooltip content={$i18n.t('Voice mode')}>
 												<button
